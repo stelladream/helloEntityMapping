@@ -1,6 +1,5 @@
 package kr.ac.hansung.cse.dao;
 
-import kr.ac.hansung.cse.entity.Instructor;
 import kr.ac.hansung.cse.entity.Student;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

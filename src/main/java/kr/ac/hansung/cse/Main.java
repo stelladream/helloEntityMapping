@@ -4,6 +4,7 @@ import kr.ac.hansung.cse.dao.CourseDao;
 import kr.ac.hansung.cse.dao.InstructorDao;
 import kr.ac.hansung.cse.dao.StudentDao;
 import kr.ac.hansung.cse.entity.Course;
+import kr.ac.hansung.cse.entity.Instructor;
 import kr.ac.hansung.cse.entity.Student;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -79,13 +80,15 @@ import java.util.Arrays;
 //        // 저장된 Instructor 조회 및 결과 확인
 //        //Instructor retrievedInstructor = instructorDao.findById(instructor1.getId());
 //        Instructor retrievedInstructor = instructorDao.findByIdWithCourses(instructor1.getId());
+//        boolean isManaged = instructorDao.isManaged(retrievedInstructor);
+//        System.out.println("Is entity managed? " + isManaged);
+//
 //        System.out.println("Instructor: " + retrievedInstructor.getFullName());
 //        for (Course Course : retrievedInstructor.getCourses()) {
 //            System.out.println("Course: " + Course.getTitle());
 //        }
 //    }
 //}
-
 
 
 // One-to-One unirectional
